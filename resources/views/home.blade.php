@@ -10,7 +10,7 @@
 <body>
     <div class="max-w-4xl mx-auto px-4">
         <h1>Bienvenido a la pagina principal </h1>
-        <x-alert type="Info">
+        <x-alert type="Dark">
             <x-slot name="title">
                 Titulo de la alerta
             </x-slot>
