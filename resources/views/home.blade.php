@@ -6,16 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Laravel 11</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    {{--fonteawsome--}}
+    {{--tipografia--}}
 </head>
 <body>
+
+    <header> </header>
     <div class="max-w-4xl mx-auto px-4">
         <h1>Bienvenido a la pagina principal </h1>
-        <x-alert type="Dark">
+
+        <x-alert2 type="Info" class="mb-4">
             <x-slot name="title">
                 Titulo de la alerta
             </x-slot>
             Contenido de la alerta 
-        </x-alert>
+        </x-alert2>
+
+        <p>Hola mundo </p>
     </div>
+
+    <footer> </footer>
 </body>
 </html>
