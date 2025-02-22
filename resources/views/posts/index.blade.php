@@ -1,18 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Laravel 11 | Posts</title>
-    {{--fonteawsome--}}
-    {{--tipografia--}}
-</head>
-<body>
-
-    <header> </header>
+<x-app-layout>
     <h1>Aqui se mostraran todos los posts desde PostController - html </h1>
-
-    <footer> </footer>
-</body>
-</html>
+    <ul>
+        @foreach($posts as $posts)
+            <li>
+                <a href="/posts/{{$posts->id}}">
+                    {{$posts->title}}
+                </a>
+            </li> 
+        @endforeach
+    </ul>
+</x-app-layout>
