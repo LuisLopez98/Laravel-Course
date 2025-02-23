@@ -1,5 +1,8 @@
 <x-app-layout>
-    <h1>Aqui se mostraran todos los posts desde PostController - html </h1>
+    <h1>Aqui se mostraran todos los posts  </h1>
+    <a href="/posts/create">
+        Nuevo Post
+    </a>
     <ul>
         @foreach($posts as $posts)
             <li>
